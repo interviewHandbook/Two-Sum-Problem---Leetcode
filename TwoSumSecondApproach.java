@@ -70,7 +70,7 @@ public class TwoSumSecondApproach {
 			 int rem = target - nums[i];
 			 if(numsMap.containsKey(rem)) {
 				 
-				 if(nums[i+1] ==  rem && numsMap.get(rem).size()>1) {
+				 if( numsMap.get(rem).size()>1) {
 					 
 					 System.out.println(nums[i+1] + " " + rem);
 					sol[0] = (int) numsMap.get(rem).toArray()[0];
